@@ -1,0 +1,261 @@
+/*body*/
+body{
+		/*para colocar una imagen de fondo*/
+	background-image:url("../imagenes/fondo1.jpg");
+	/*para que no se repita la imagen de fondo*/
+	background-repeat: no-repeat; 
+	/*para ajustar el tamaño de la imagen*/
+	background-size: 100% 100%;
+	/*font-family es para el tipo de letra:si el 1ro mo lo encuentra coloca el segundo, sino el tercero*/
+	font-family: arial, "times new roman";
+	/*font-size para el tamaño de letra*/
+	font-size: 40px;
+	color:#196F3D;
+}
+hr{
+		/*border es para linea tamaño en pixeles tipo de linea y color*/
+	border: 5px solid;
+	/*border-radius es para el terminado de las orillas el radio que se tendra se expresa en pixeles*/
+	border-radius:5px;
+}
+p{
+	/*text-align se utiliza para alinear el texto por default estan alineados a la izquierda*/
+	text-align: justify;
+	font-size:20px;
+	color: #211B19;
+	text-align:center;
+	font-family: dominican;
+}
+
+table,tr,td{
+	/*linea grosor y tipo de linea*/
+	border: 3px solid;
+	/*color de linea*/
+	border-color:#110401;
+	/*alineacion del texto*/
+	text-align:center;
+	/*color de fondo*/
+	background-color:#565453;
+}
+th{
+	background-color:white;
+}
+ul{
+	list-style-type:circle;
+	list-style-position: inside;
+	text-align:center;
+	font-family: dominican;
+}
+ol{
+		/*algunos de los valores de list-type-type son:
+		lower-alpha; lower roman; upper-alpha;
+		a,b,c,d,e,f i,ii,iii,iv A,B,C,D,E,F I,II,III,IV*/
+	list-style-type:upper-roman;
+	list-style-position:inside;
+	text-align:center;
+	font-family: dominican;
+}
+.pie{
+		text-align:center;
+		font-size:12px;
+		color:black;
+		font-family: dominican; 
+		font-weight:bold; /*negritas*/
+}
+.table{
+	font-family:cloister;
+	Font-size:20px; 
+	color:red;
+}
+.title{
+	font-size:50px;
+	color:green;
+	font-weight:bold; /*negritas*/
+	font-family:pieces;
+	text-align:center; 
+}
+.imsina{
+	width:450px;
+	height:450px;
+}
+.bottom{
+	border-radius:50%;
+	width:150px;
+	height:150px;
+}
+.imtable{
+	width:150px;
+	height:150px;
+}
+.imgs{
+	width:350px;
+	height:350px;
+	border:10px solid #000000;
+	padding:2px;
+}
+@font-face{
+	font-family: pieces;
+	src: url("../fuentes/pieces.ttf");
+}
+@font-face{
+	font-family: dominican;
+	src: url("../fuentes/dominican.ttf");
+}
+@font-face{
+	font-family: cloister;
+	src: url("../fuentes/cloister.ttf");
+}
+.ftgoogle{
+font-family: 'Edu NSW ACT Foundation', cursive;
+}
+/*uso de Div's*/
+/*div o caja para el encabezado */
+*{
+	margin:0px;
+	padding.0px;
+}
+div#top{
+	width:100%;
+	height:100px;
+	background-color:red;
+	background-image:linear-gradient(#3498DB, #FDFEFE);
+}
+div#main{
+	margin:auto;
+	margin-top:10px;
+	width:90%; 
+	height:700px;
+	background-image:radial-gradient(#FA7D62 ,#FCB1A1);
+}
+div#piep{
+	margin-top:10px;
+	width:100%;
+	height:80px;
+	background-color:#85C1E9;
+	background-image: url("../imagenes/fondo1.jpg");
+}
+div#main2{
+	margin:auto;
+	margin-top:10px;
+	width:90%; 
+	height:950px;
+	background-image:radial-gradient(#FA7D62 ,#FCB1A1);
+}
+div#main3{
+	margin:auto;
+	margin-top:10px;
+	width:90%; 
+	height:1060px;
+	background-image:radial-gradient(#FA7D62 ,#FCB1A1);
+}
+div#main4{
+	margin:auto;
+	margin-top:10px;
+	width:90%; 
+	height:1550px;
+	background-image:radial-gradient(#FA7D62 ,#FCB1A1);
+}
+div#main5{
+	margin:auto;
+	margin-top:10px;
+	width:90%; 
+	height:1500px;
+	background-image:radial-gradient(#FA7D62 ,#FCB1A1);
+}
+.caja{
+	height:250px;
+	width:200px;
+	background:grey; 
+	border:1px solid grey; 
+	margin:5px; 
+	color:black; 
+	text-align:center; 
+	display:inline-block; 
+}
+.caja:hover{
+	box-shadow:0 0 10px #F93106;
+	transform:scale(1.3);
+}
+.caja-texto{
+	padding-top:2px; 
+	font-size:20px; 
+	color:blue; 
+	font-weight:bold; 
+}
+.texto-adicional{
+	padding-top:5px;
+	font-size:20px;
+}
+.carrousel{
+    width:600px;
+    margin:auto;
+    box-sizing:border-box;
+}
+.conteCarrousel{
+    width:100%;
+    height:400px;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+.itemCarrousel{
+    position:relative;
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+.itemCarrouselTarjeta{
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+.itemCarrouselArrows{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px;
+    box-sizing:border-box;
+}
+.itemCarrouselArrows >i :hover{
+    cursor:pointer;
+}
+.conterCarrouselController{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.conterCarrouselController >a{
+    text-decoration:none;
+    font-size:32px;
+    color:grey;
+}
+.itemCarrouselArrows >a >i {
+    color:white;
+}
+.des{
+	text-align:center;
+		font-size:25px;
+		color:black;
+		font-family: dominican; 
+		font-weight:bold; /*negritas*/
+}
+.cajat{
+	height:120x;
+	width:160px;
+	background:grey; 
+	border:1px solid grey; 
+	margin:5px; 
+	color:black; 
+	text-align:center; 
+	display:inline-block; 
+}
+.cajat:hover{
+	box-shadow:0 0 10px #F93106;
+	transform:scale(1.3);
+}
